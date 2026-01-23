@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.valores{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin: 10px;
+}
+
+.valoe{
+    margin-right: 10px;
+}
+
+.valor{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#operacion{
+    margin-left: 20px;
+}
+
+#boton{
+    margin-left: 20px;
+}
+
+.respuesta{
+    margin-left: 20px;
+}

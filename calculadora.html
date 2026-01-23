@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<title>Ejercicios basicos java sript</title>
+		<link rel="stylesheet" href="calculadora.css">
+	</head>
+	<header>
+		<h1>Ejercicios Calculadora</h1>	
+	</header>
+	<body>
+
+		<div class="valores">
+			<label class="valor">Valor 1</label>
+			<input type="number" id="valor_1">
+
+			<label class="valor">Valor 2</label>
+			<input type="number" id="valor_2">
+		
+			<select id="operacion">
+				<option value=" ">Operacion</option>
+				<option value="suma">Suma</option>
+				<option value="resta">Resta</option>
+				<option value="multiplicacion">Multiplicacion</option>
+				<option value="division">Division</option>
+			</select>
+
+			<button id="boton" onclick="operacion()">Ejecutar</button>
+
+			<p class="respuesta">Solucion: <span id="solucion"></span></p>
+		</div>
+
+		<script src="calculadora.js"></script>
+	</body>
+</html>
