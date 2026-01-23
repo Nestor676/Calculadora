@@ -16,7 +16,7 @@ function operacion(){
 function suma(){
     let valor_1 = Number(document.getElementById("valor_1").value);
     let valor_2 = Number(document.getElementById("valor_2").value);
-    let solucion = document.getElementById("solucion")
+    let solucion = document.getElementById("solucion");
 
     if(Number.isInteger(valor_1, valor_2) || Number.isFinite(valor_1, valor_2)){
         let suma = valor_1 + valor_2;
@@ -28,13 +28,31 @@ function suma(){
     }
 }
 
+function arraySuma(){
+    let texto = document.getElementById("valores").value;
+    let solucion = document.getElementById("solucion_array");
+    
+    let separar = texto.split(" ");
+    let suma = 0;
+
+    for (let i = 0; i < separar.length; i++) {
+        if (isNaN(separar[i])) {
+            solucion.innerText = "Introduce valores correctos";
+            return;
+        }
+    suma += separar[i];
+    }
+
+    solucion.innerText = suma;
+}
+
 function resta(){
     let valor_1 = Number(document.getElementById("valor_1").value);
     let valor_2 = Number(document.getElementById("valor_2").value);
-    let solucion = document.getElementById("solucion")
+    let solucion = document.getElementById("solucion");
 
     if(Number.isInteger(valor_1, valor_2) || Number.isFinite(valor_1, valor_2)){
-        let resta = valor_1 + valor_2;
+        let resta = valor_1 - valor_2;
 
         solucion.innerText = resta;
     }else{
@@ -46,10 +64,10 @@ function resta(){
 function multiplicacion(){
     let valor_1 = Number(document.getElementById("valor_1").value);
     let valor_2 = Number(document.getElementById("valor_2").value);
-    let solucion = document.getElementById("solucion")
+    let solucion = document.getElementById("solucion");
 
     if(Number.isInteger(valor_1, valor_2) || Number.isFinite(valor_1, valor_2)){
-        let multiplicacion = valor_1 + valor_2;
+        let multiplicacion = valor_1 * valor_2;
 
         solucion.innerText = multiplicacion;
     }else{
@@ -61,10 +79,10 @@ function multiplicacion(){
 function division(){
     let valor_1 = Number(document.getElementById("valor_1").value);
     let valor_2 = Number(document.getElementById("valor_2").value);
-    let solucion = document.getElementById("solucion")
+    let solucion = document.getElementById("solucion");
 
     if(Number.isInteger(valor_1, valor_2) || Number.isFinite(valor_1, valor_2)){
-        let division = valor_1 + valor_2;
+        let division = valor_1 / valor_2;
 
         solucion.innerText = division;
     }else{

@@ -11,10 +11,10 @@
 
 		<div class="valores">
 			<label class="valor">Valor 1</label>
-			<input type="number" id="valor_1">
+			<input type="number" id="valor_1" placeholder="0">
 
 			<label class="valor">Valor 2</label>
-			<input type="number" id="valor_2">
+			<input type="number" id="valor_2" placeholder="0">
 		
 			<select id="operacion">
 				<option value=" ">Operacion</option>
@@ -27,6 +27,15 @@
 			<button id="boton" onclick="operacion()">Ejecutar</button>
 
 			<p class="respuesta">Solucion: <span id="solucion"></span></p>
+		</div>
+
+		<div class="valores">
+			<label class="valor">Valores</label>
+			<input type="number" id="valores" placeholder="1 2 3 4">
+		
+			<button id="boton2" onclick="arraySuma()">Suma</button>
+
+			<p class="respuesta">Solucion: <span id="solucion_array"></span></p>
 		</div>
 
 		<script src="calculadora.js"></script>
