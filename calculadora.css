@@ -33,6 +33,26 @@
     margin-left: 20px;
 }
 
-#boton2{
-    margin-left: 20px;
+.tabla{
+    width: 40%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.caja_tabla{
+    width: 30%;
+    margin-left: 10px;
+}
+
+#solucion_array{
+    text-align: center;
+    height: 30px;
+}
+
+.botonTabla{
+    width: 100%;
+}
+
+.boton{
+    width: 100%;
 }
