@@ -4,44 +4,32 @@
 		<title>Ejercicios basicos java sript</title>
 		<link rel="stylesheet" href="calculadora.css">
 	</head>
-	<header>
-		<h1>Ejercicios Calculadora</h1>	
-	</header>
 	<body>
-		<div class="caja_tabla">
-    		<table class="tabla" border="5px" cellpadding="10" cellspacing="5">
-        		<thead>
-            		<tr class="solucionTr">
-                		<th colspan="4" id="solucion_array"></th>
-            		</tr>
-        		</thead>
-        		<tbody>
-            		<tr>
-                		<td class="botonTabla"><button class="boton" onclick="numero(1)">1</button></td>
-                		<td class="botonTabla"><button class="boton" onclick="numero(2)">2</button></td>
-                		<td class="botonTabla"><button class="boton" onclick="numero(3)">3</button></td>
-                		<td class="botonTabla"><button class="boton" onclick="setOperador(/)">/</button></td>
-            		</tr>
-            		<tr>
-                		<td class="botonTabla"><button class="boton" onclick="numero(4)">4</button></td></td>
-                		<td class="botonTabla"><button class="boton" onclick="numero(5)">5</button></td></td>
-                		<td class="botonTabla"><button class="boton" onclick="numero(6)">6</button></td></td>
-                		<td class="botonTabla"><button class="boton" onclick="setOperador(*)">*</button></td>
-            		</tr>
-            		<tr>
-                		<td class="botonTabla"><button class="boton" onclick="numero(7)">7</button></td>
-                		<td class="botonTabla"><button class="boton" onclick="numero(8)">8</button></td>
-                		<td class="botonTabla"><button class="boton" onclick="numero(9)">9</button></td>
-                		<td class="botonTabla"><button class="boton" onclick="setOperador(-)">-</button></td>
-            		</tr>
-            		<tr>
-                		<td class="botonTabla"><button class="boton" onclick="numero(0)">0</button></td></td>
-                		<td class="botonTabla"><button class="boton" onclick="calcular()">=</button></td>
-            		</tr>
-        		</tbody>
-    		</table>
+		
+		<div class="calculadora">
+			<div class="pantalla">0</div>
+				<button class="btn">^</button>
+				<button id="c" class="btn">C</button>
+				<button id="borrar" class="btn">←</button>
+				<button class="btn">/</button>
+				<button class="btn">*</button>
+				<button class="btn">√</button>
+				<button class="btn">7</button>
+				<button class="btn">8</button>
+				<button class="btn">9</button>
+				<button class="btn">-</button>
+				<button class="btn">π</button>
+				<button class="btn">4</button>
+				<button class="btn">5</button>
+				<button class="btn">6</button>
+				<button class="btn">+</button>
+				<button class="btn">1</button>
+				<button class="btn">2</button>
+				<button class="btn">3</button>
+				<button id="igual" class="btn">=</button>
+				<button id="cero" class="btn">0</button>
+				<button class="btn">.</button>
 		</div>
-
 
 		<script src="calculadora.js"></script>
 	</body>

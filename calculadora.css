@@ -4,55 +4,65 @@
     box-sizing: border-box;
 }
 
-.valores{
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3a0404;
     display: flex;
     justify-content: center;
-    align-content: center;
-    text-align: center;
-    margin: 10px;
+    align-items: center;
+    min-height: 100vh;
 }
 
-.valoe{
-    margin-right: 10px;
+.calculadora {
+    background-color: #5c0707;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 350px;
+    max-width: 100%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    gap: 0.5rem;
 }
 
-.valor{
-    margin-left: 10px;
-    margin-right: 10px;
+.pantalla {
+    grid-column: 1 / 6;
+    background-color: #3a0404;
+    padding: 1.5rem;
+    font-size: 2rem;
+    text-align: right;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    max-width: 100%;
 }
 
-#operacion{
-    margin-left: 20px;
+.btn {
+    background-color: #5c0707;
+    color: white;
+    border: none;
+    padding: 1.5rem 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
 }
 
-#boton{
-    margin-left: 20px;
+.btn:hover {
+    background-color: #3a0404;
+    cursor: pointer;
 }
 
-.respuesta{
-    margin-left: 20px;
+#cero {
+    grid-column: 1 / 3;
 }
 
-.tabla{
-    width: 40%;
-    table-layout: fixed;
-    border-collapse: collapse;
+#igual {
+    grid-row: span 2;
+    grid-column: span 2;
+    background-color: #09cfe9;
 }
 
-.caja_tabla{
-    width: 30%;
-    margin-left: 10px;
-}
-
-#solucion_array{
-    text-align: center;
-    height: 30px;
-}
-
-.botonTabla{
-    width: 100%;
-}
-
-.boton{
-    width: 100%;
+#igual:hover {
+    background-color: #07a5b0;
+    cursor: pointer;
 }
