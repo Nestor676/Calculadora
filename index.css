@@ -1,0 +1,12 @@
+body{
+	background-image: linear-gradient(10deg, rgb(172, 145, 145), rgba(0, 0, 0, 0.671) ), url(../img/fondo.jpeg) ;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.enlaces{
+	color: peru;
+	text-decoration: none;
+}
