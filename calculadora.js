@@ -43,7 +43,7 @@ botones.forEach( boton => {
             return;
         }
         
-        const operadores = ['+','-','*','/','^','√'];
+        const operadores = ['+','-','*','/','^'];
 
         if(pantalla.textContent === "0" || pantalla.textContent === "Error"){
             if(operadores.includes(botonApretado)){
